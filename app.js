@@ -1,7 +1,7 @@
 const { program } = require("commander");
 
-const contacts = require("./contacts.json");
-// TODO: рефакторити
+const contacts = require("./db");
+
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
